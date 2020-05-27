@@ -23,6 +23,7 @@ ENV PATH ${QT_DESKTOP}/bin:${QT_PATH}/Tools/CMake/bin:${QT_PATH}/Tools/Ninja:$PA
 #  * build-essential, pkg-config, libgl1-mesa-dev - basic Qt build requirements
 #  * libsm6, libice6, libxext6, libxrender1, libfontconfig1, libdbus-1-3 - dependencies of the Qt bundle run-file
 RUN apt update && apt full-upgrade -y && apt install -y --no-install-recommends \
+    file \
     git \
     openssh-client \
     ca-certificates \
